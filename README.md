@@ -1,0 +1,2 @@
+# abstract-factory
+Паттерн "Фабрика"
