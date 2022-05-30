@@ -6,22 +6,22 @@ public class VeggiePizza extends Pizza {
     }
 
     @Override
-    void prepare() {
-        System.out.println(" приготовлена вегетарианская пицца, "); // Можно попробовать GetClass()
+    public void prepare() {
+        System.out.print("Приготовлена вегетарианская пицца, ");
     }
 
     @Override
-    void bake() {
-        System.out.println("испечена вегетарианская пицца, ");
+    public void bake() {
+        System.out.print("испечена вегетарианская пицца, ");
     }
 
     @Override
-    void cut() {
-        System.out.println("нарезана вегетарианская пицца, ");
+    public void cut() {
+        System.out.print("нарезана вегетарианская пицца, ");
     }
 
     @Override
-    void box() {
-        System.out.println("упакована вегетарианская пицца, \n");
+    public void box() {
+        System.out.print("упакована вегетарианская пицца.");
     }
 }

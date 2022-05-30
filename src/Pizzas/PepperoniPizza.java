@@ -6,22 +6,22 @@ public class PepperoniPizza extends Pizza {
     }
 
     @Override
-    void prepare() {
-        System.out.println(" приготовлена пицца пепперони, "); // Можно попробовать GetClass()
+    public void prepare() {
+        System.out.print("Приготовлена пицца пепперони, ");
     }
 
     @Override
-    void bake() {
-        System.out.println("испечена пицца пепперони, ");
+    public void bake() {
+        System.out.print("испечена пицца пепперони, ");
     }
 
     @Override
-    void cut() {
-        System.out.println("нарезана пицца пепперони, ");
+    public void cut() {
+        System.out.print("нарезана пицца пепперони, ");
     }
 
     @Override
-    void box() {
-        System.out.println("упакована пицца пепперони, \n");
+    public void box() {
+        System.out.print("упакована пицца пепперони. \n");
     }
 }

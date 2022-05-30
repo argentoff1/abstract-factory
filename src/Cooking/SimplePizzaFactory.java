@@ -1,28 +1,20 @@
 package Cooking;
 
-import Pizzas.Pizza;
+import Pizzas.*;
 
 public class SimplePizzaFactory {
-    public static Pizza createPizza(String type);
+    public Pizza createPizza(String type) {
 
-    Pizza pizza = null;
+        Pizza pizza = null;
+        if (type.equals("cheese"))
+            pizza = new CheesePizza();
+        else if (type.equals("pepperoni"))
+            pizza = new PepperoniPizza();
+        else if (type.equals("clam"))
+            pizza = new ClamPizza();
+        else if (type.equals("veggie"))
+            pizza = new VeggiePizza();
 
-    if(type.equals("cheese"))
-    pizza =new
-
-    CheesePizza();
-    else if(type.equals("pepperoni"))
-    pizza =new
-
-    PepperoniPizza();
-    else if(type.equals("clam"))
-    pizza =new
-
-    ClamPizza();
-    else if(type.equals("veggie"))
-    pizza =new
-
-    VeggiePizza();
-
-    return pizza;
+        return pizza;
+    }
 }

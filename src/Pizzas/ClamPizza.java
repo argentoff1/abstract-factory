@@ -6,22 +6,22 @@ public class ClamPizza extends Pizza {
     }
 
     @Override
-    void prepare() {
-        System.out.println(" приготовлена пицца с молюсками, "); // Можно попробовать GetClass()
+    public void prepare() {
+        System.out.print("Приготовлена пицца с молюсками, ");
     }
 
     @Override
-    void bake() {
-        System.out.println("испечена пицца с молюсками, ");
+    public void bake() {
+        System.out.print("испечена пицца с молюсками, ");
     }
 
     @Override
-    void cut() {
-        System.out.println("нарезана пицца с молюсками, ");
+    public void cut() {
+        System.out.print("нарезана пицца с молюсками, ");
     }
 
     @Override
-    void box() {
-        System.out.println("упакована пицца с молюсками, \n");
+    public void box() {
+        System.out.print("упакована пицца с молюсками. \n");
     }
 }

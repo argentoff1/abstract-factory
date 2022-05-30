@@ -1,5 +1,4 @@
-import Cooking.PizzaStore;
-import Cooking.SimplePizzaFactory;
+import Cooking.*;
 
 public class Main {
 
